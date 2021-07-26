@@ -1,13 +1,24 @@
-<!DOCTYPE html>
 <html>
-<style>
-	html {
-  font-size: 10px;
+	<header>
+		<style>
+			html {
+  				font-size: 10px;
+				}
+
+			main {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+				background-color: ##f2e9e9;
+				margin-left: 80px;
+    margin-right: 80px;
+    border-style: solid;
+    border-color: #9d9797;
+    border-width: 25px;
+    padding: 25px;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Helvetica Neue', Arial, sans-serif;
+#title{
+  text-align: center;
+  font-size: 5em;
 }
 
 #img-div {
@@ -18,6 +29,14 @@ body {
 }
 #tribute-info {
   font-size: 1.6em;
+}
+
+#tribute-list{
+  line-height: 1.8;
+  -size:1.6
+}
+#tribute-list h2{
+  font-size: 1.1em;
 }
 
 #image {
@@ -31,19 +50,38 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
+  font-size: 1.4em;
+  font-style: italic;
 }
-</style>
+		</style>
+	</header>
   <main id=main>
     <h1 id=title>Richard Benson</h1>
-    <div id="img-div">
+    <figure id="img-div">
       <img id="image" src="https://i.ytimg.com/vi/TcyNAUdO8Rc/hqdefault.jpg" alt="Richard Benson"></img>
-    <div id="img-caption">
-      <p>Richard Benson in the 80s</p>
-    </div>
-    </div>
+    <figcaption id="img-caption">
+      Richard Benson in the 80s holding a Gibson Les Paul guitar
+    </figcaption>
+    </figure>
   <div id="tribute-info">
-    <p>Richard Philip Henry John Benson (born 10 March 1955) is a British-Italian guitarist, singer, music journalist, and actor.</p>
+    <p><a id="tribute-link" href="https://en.wikipedia.org/wiki/Richard_Benson_(musician)" target="_blank">Richard Philip Henry John Benson</a> (born 10 March 1955) is a British-Italian guitarist, singer, music journalist, and actor.</p>
+   <div id="tribute-list">
+    <h2>Musical career</h2>
+    <ul>
+      <li>In 1971, Benson recorded with the progressive rock band Buon Vecchio Charlie a self-titled LP, which was only released in 1990 when the original record company brought out some of their early productions on CD. The album features Benson on vocals and 12-string guitar.</li>
+
+      <li>In 1972, he took part in the festival Villa Pamphili.</li>
+
+      <li>In 1983, he released his first single, "Animal Zoo", an Italo disco production. In the following year he released his second single, "Renegade", a song (along with the B-side "Flash Back") with electro-rock tones.</li>
+
+      <li>In 1984, he wrote and recorded music for the cult movie The Incinerator (Italian title L'inceneritore) in which he also appeared in a small role as a street gang member.</li>
+
+      <li>In 1987, he produced the compilation album, Metal Attack (RCA Italy – Talent), where he sings on the track Exotic Escape that he also co-wrote.</li>
+
+      <li>In 1999, he released a solo album called Madre Tortura, that featured progressive hard-rock tracks. In 2015, he released L'inferno dei vivi on the label INRI, a rock-opera-style concept album with electronic elements, and the accompanying single I Nani.</li>
+
+      <li>In 2016, Benson released Duello madre, a digital compilation of tracks from earlier releases.</li> </div>
+    </ul>
   </div>
-  <a id="tribute-link" href="https://en.wikipedia.org/wiki/Richard_Benson_(musician)" target="_blank"> Wikipedia link</a>
   </main>
 </html>
