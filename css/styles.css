@@ -6,15 +6,15 @@ html {
 header{
     border-radius: 20px;
     width: 100%;
-    height: 20px;
+    height: 30px;
     margin:  50 auto;
     background: repeating-linear-gradient(
       45deg,
       yellow 0px,
       yellow 40px,
       black 40px,
-      black 80px
-    );}
+      black 80px);
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
