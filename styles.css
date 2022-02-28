@@ -1,0 +1,179 @@
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+  }
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar {
+  background-color: black;
+  font-size: 1.6rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.title {
+  font-size: 10rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 75px;
+  text-shadow: 3px 1px 5px gray;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.presentation {
+  text-align: center;
+  width: 45ch;
+  margin: auto;
+  padding-top: 100px;
+  font-size: 2rem;
+}
+
+body {
+  background-color: lightgray;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+html {
+  position: relative;
+}
+
+.home {
+  padding-bottom: 10%;
+}
+
+.projects {
+  height: 100vh;
+}
+
+.about {
+  height: 100vh;
+}
+
+.resume {
+  margin-bottom: 10%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10%;
+  justify-content: center;
+  align-content: center;
+  padding: 10% 10% 0% 10%;
+}
+
+.grid-item {
+  width: fit-content;
+  height: fit-content;
+}
+
+.grid-item-1 {
+  background-color: white;
+}
+
+.grid-item-2 {
+  background-color: yellow;
+}
+
+.grid-item-3 {
+  background-color: pink;
+}
+
+.sectiontitle {
+  padding: 0px 0px 50px 0px;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.sectionsubtitle {
+  padding: 50px 0px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.sectiontext {
+  text-align: center;
+  font-size: 2rem;
+  width: 45ch;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.list {
+  font-size: 2rem;
+  text-align: center;
+  width: inherit;
+  list-style-type: none;
+}
+
+input[type=text], select, textarea, input[type=email] {
+  padding: 1%;
+  margin: 1%;
+  width: 35%;
+  border: 2% solid black;
+  resize: vertical;
+}
+
+input[type=submit] {
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.contactform {
+  font-size: 2rem;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 10%;
+}
+
+.form {
+  text-align: center;
+}
+
+.contactlist {
+  font-size: 2rem;
+  margin: auto;
+  text-align: center;
+  width: 30%;
+}
+
+.mailicon {
+  list-style-type: '\1F4E7';
+}
+
+.phoneicon {
+  list-style-type: '\01F4F1';
+}
