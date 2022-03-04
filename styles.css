@@ -11,11 +11,15 @@
 
 .navbar li a {
   display: block;
-  color: white;
+  color: lightgray;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.navbar li a:hover {
+  color: white;
 }
 
 .navbar {
@@ -28,10 +32,19 @@
 
 .title {
   font-size: 10rem;
-  text-align: center;
   text-transform: uppercase;
-  padding: 75px;
+  text-align: center;
+  padding: 1%;
   text-shadow: 3px 1px 5px gray;
+  animation-name: titleAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes titleAnimation {
+  0% {margin-right: -100%;}
+  75% {margin-right: 25%;}
+  100% {margin-right: 0;}
 }
 
 .subtitle {
@@ -43,32 +56,28 @@
   text-align: center;
   width: 45ch;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 1%;
   font-size: 2rem;
 }
 
-body {
+body, html {
   background-color: lightgray;
   font-family: 'Courier New', monospace;
   margin: 0;
   padding: 0;
-  font-size: 62.5%;
 }
 
 html {
   position: relative;
-}
-
-.home {
-  padding-bottom: 10%;
+  font-size: 16px;
 }
 
 .projects {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .about {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .resume {
@@ -89,8 +98,13 @@ html {
   height: fit-content;
 }
 
-.grid-item-1 {
-  background-color: white;
+.grid-item:hover {
+  opacity: 50%;
+}
+
+.projectpic {
+    width: 300px;
+    height: 300px;
 }
 
 .grid-item-2 {
@@ -177,3 +191,64 @@ input[type=submit] {
 .phoneicon {
   list-style-type: '\01F4F1';
 }
+
+.home {
+  min-height: 100vh;
+}
+
+#date {
+  text-align: center;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 100; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: lightgray; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 1%; /* Some padding */
+  font-size: 1rem; /* Increase font size */
+  text-transform: uppercase;
+}
+
+#myBtn:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+
+  html {
+    font-size: 10px;
+  }
+
+  .subtitle {
+    padding-top: 10%;
+  }
+
+  .presentation {
+    padding-top: 20%;;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5%;
+    padding: 10% 5% 0% 5%;
+  }
+
+  .about>.sectiontext {
+    font-size: 3rem;
+    width: 25ch;
+    padding-top: 10%;
+  }
+
+  .title {
+    animation-name: none;
+  }
+}
+

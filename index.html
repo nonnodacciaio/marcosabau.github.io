@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport" /> 
         <meta name="description" content="Personal portfolio" />
         <meta name="author" content="Marco Sabau" />
         <title>Marco's Portfolio</title>
@@ -17,21 +17,23 @@
                 <li><a href=#resume>Resume</a></li>
             </ul>
         </nav>
+
+        <h2 id="date"></h2>
+        
+        <div class="home" id="home">
         <header><h1 class="title">Marco Sabau</h1>
             <h2 class="subtitle">Welcome to my portfolio</h2>
         </header>
         <main>
-        <section class="home" id="home">
-            
-            <div class="presentation"><p>Hi! My name is Marco and I'd like to turn my hobby as a developer into a job</p></div>
-        </section>
+        <section><p class="presentation">Hi! My name is Marco and I'd like to turn my hobby as a developer into a job</p>
+        </section></div>
 
     <section class="projects" id="projects">
         <h2 class="sectiontitle">Projects</h2>
-        <p class="sectiontext">Here's a collection of my better projects</p>
+        <p class="sectiontext">Here's a collection of my best projects</p>
         <div class="grid-container">
             <div class="grid-item grid-item-1">
-                <a href="#"><img src="http://placekitten.com/300/300" alt="project1"></a>
+                <a target="_blank" href="/Games/rockPaperScissors/index.html"><img src="/img/rps.png"  alt="project1" class="projectpic"></a>
             </div>
             <div class="grid-item grid-item-2">
                 <a href="#"><img src="http://placekitten.com/300/300" alt="project2"></a>
@@ -39,6 +41,9 @@
             <div class="grid-item grid-item-3">
                 <a href="#"><img src="http://placekitten.com/300/300" alt="project3"></a>
             </div>
+                <div class="grid-item grid-item-4">
+                    <a href="#"><img src="http://placekitten.com/300/300" alt="project4"></a>
+                </div>
         </div>
     </section>
     <section class="about" id="about">
@@ -60,20 +65,20 @@
         <p class="sectiontext">I have some experience in HTML, CSS, JS, Java, C# and MySQL. I also know my way around a computer in a broader sense as I've been using them all my life. I'm also fluent in three languages: Italian, Romanian and English. I'm confident that my past working experiences have made better in dealing with people, working in a team and especially under pressure.</p>
     </section>
     <section class="contactform" id="contact">
-        <h2 class="sectiontitle">Contact me</h2>
+        <!--<h2 class="sectiontitle">Contact me</h2>
         <form class="form">
-            <!--<label for="fname">First name:</label>-->
+            <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname" placeholder="First name"><br>
-            <!--<label for="lname">Last name:</label>-->
+            <label for="lname">Last name:</label>
             <input type="text" id="lname" name="lname" placeholder="Last name"><br>
-            <!--<label for="cname">Company:</label>-->
+            <label for="cname">Company:</label>
             <input type="text" id="cname" name="cname" placeholder="Company name"><br>
-            <!--<label for="email">Email:</label>-->
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Email"><br>
-            <!--<label for="message">Message:</label>-->
+            <label for="message">Message:</label>
             <textarea id="message" name="message" placeholder="Write something nice..."></textarea><br>
             <input type="submit" value="Submit">
-        </form>
+        </form>-->
 
         <h3 class="sectionsubtitle">Other contacts</h3>
         <ul class="contactlist">
@@ -84,5 +89,7 @@
     </section>
     </main>
     <footer>© 2022 Marco Sabau</footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+    <script src="script.js"></script>
     </body>
 </html>
