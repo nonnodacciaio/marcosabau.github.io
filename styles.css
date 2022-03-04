@@ -88,31 +88,7 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10%;
-  justify-content: center;
-  align-content: center;
   padding: 10% 10% 0% 10%;
-}
-
-.grid-item {
-  width: fit-content;
-  height: fit-content;
-}
-
-.grid-item:hover {
-  opacity: 50%;
-}
-
-.projectpic {
-    width: 300px;
-    height: 300px;
-}
-
-.grid-item-2 {
-  background-color: yellow;
-}
-
-.grid-item-3 {
-  background-color: pink;
 }
 
 .sectiontitle {
