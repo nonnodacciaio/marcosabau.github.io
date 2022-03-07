@@ -36,15 +36,6 @@
   text-align: center;
   padding: 1%;
   text-shadow: 3px 1px 5px gray;
-  animation-name: titleAnimation;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
-}
-
-@keyframes titleAnimation {
-  0% {margin-right: -100%;}
-  75% {margin-right: 25%;}
-  100% {margin-right: 0;}
 }
 
 .subtitle {
@@ -54,7 +45,7 @@
 
 .presentation {
   text-align: center;
-  width: 45ch;
+  max-width: 45ch;
   margin: auto;
   padding-top: 1%;
   font-size: 2rem;
@@ -69,7 +60,6 @@ body, html {
 
 html {
   position: relative;
-  font-size: 16px;
 }
 
 .projects {
@@ -106,7 +96,7 @@ html {
 .sectiontext {
   text-align: center;
   font-size: 2rem;
-  width: 45ch;
+  max-width: 45ch;
   margin: auto;
 }
 
@@ -157,7 +147,7 @@ input[type=submit] {
   font-size: 2rem;
   margin: auto;
   text-align: center;
-  width: 30%;
+  width: 50%;
 }
 
 .mailicon {
@@ -170,10 +160,6 @@ input[type=submit] {
 
 .home {
   min-height: 100vh;
-}
-
-#date {
-  text-align: center;
 }
 
 #myBtn {
@@ -202,6 +188,9 @@ input[type=submit] {
     font-size: 10px;
   }
 
+  section {
+    margin: 0% 5% 0% 5%;
+  }
   .subtitle {
     padding-top: 10%;
   }
