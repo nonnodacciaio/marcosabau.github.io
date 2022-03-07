@@ -1,7 +1,5 @@
 //Get the button:
 mybutton = document.getElementById("myBtn");
-const d = new Date();
-document.getElementById("date").innerHTML = d;
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
