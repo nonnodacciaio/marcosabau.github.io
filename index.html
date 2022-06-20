@@ -1,99 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta content="width=device-width, initial-scale=1" name="viewport" /> 
-        <meta name="description" content="Personal portfolio" />
-        <meta name="author" content="Marco Sabau" />
-        <title>Marco's Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href=#home>Home</a></li>
-                <li><a href=#projects>Projects</a></li>
-                <li><a href=#about>About</a></li>
-                <li><a href=#resume>Resume</a></li>
-            </ul>
-        </nav>
-        
-        <div class="home" id="home">
-        <header><h1 class="title">Marco Sabau</h1>
-            <h2 class="subtitle">Welcome to my portfolio</h2>
-        </header>
-        <main>
-        <section><p class="presentation">Hi! My name is Marco and I'd like to turn my hobby as a developer into a job</p>
-        </section></div>
 
-    <section class="projects" id="projects">
-        <h2 class="sectiontitle">Projects</h2>
-        <p class="sectiontext">Here's a collection of my best projects. I highly recommend opening them in codepen.</p>
-        <div class="grid-container">
-            <div class="grid-item grid-item-1">
-                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="rNYPqqw" data-user="nonnodacciaio" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                    <span>See the Pen <a href="https://codepen.io/nonnodacciaio/pen/rNYPqqw">
-                    Rock Paper Scissors</a> by Marco (<a href="https://codepen.io/nonnodacciaio">@nonnodacciaio</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
-                  </p>
-                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-            </div>
-            <div class="grid-item grid-item-2">
-                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NWwJzaV" data-user="nonnodacciaio" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                    <span>See the Pen <a href="https://codepen.io/nonnodacciaio/pen/NWwJzaV">
-                    Google clone</a> by Marco (<a href="https://codepen.io/nonnodacciaio">@nonnodacciaio</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
-                  </p>
-                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-            </div>
-            <div class="grid-item grid-item-3">
-            </div>
-        </div>
-    </section>
-    <section class="about" id="about">
-        <h2 class="sectiontitle">About</h2>
-        <p class="sectiontext">My name is Marco and I'm trying to completely change path in life and try to become a developer. I do not have any academic knowledge of programming, except for some basic C++, HTML and CSS that I did in highschool. I study everyday by myself in order to meet the market's requirements and also to learn new things</p>
-    </section>
-    <section class="resume" id="resume">
-        <h2 class="sectiontitle">Resume</h2>
-        <h3 class="sectionsubtitle">Work experience</h3>
-        <ul class="list">
-            <li>I worked in a supermarket from late 2020 to late 2021</li>
-            <li>I worked in a factory in the beginning of 2020</li>
-            <li>I worked as a pizza delivery guy from 2018 to 2020</li>
-        </ul><br><br><br>
-        <p class="sectiontext">As you can see I have no development background, but that's what I'm trying to change. Landing a job in that field would be amazing</p>
-        <h3 class="sectionsubtitle">Education</h3>
-        <p class="sectiontext">I studied accounting, more specifically "International relations for marketing" or something along those lines, not sure how that would be translated into English</p>
-        <h3 class="sectionsubtitle">Skills</h3>
-        <p class="sectiontext">I have some experience in HTML, CSS, JS, Java, C# and MySQL. I also know my way around a computer in a broader sense as I've been using them all my life. I'm also fluent in three languages: Italian, Romanian and English. I'm confident that my past working experiences have made better in dealing with people, working in a team and especially under pressure.</p>
-    </section>
-    <section class="contactform" id="contact">
-        <!--<h2 class="sectiontitle">Contact me</h2>
-        <form class="form">
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" placeholder="First name"><br>
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname" placeholder="Last name"><br>
-            <label for="cname">Company:</label>
-            <input type="text" id="cname" name="cname" placeholder="Company name"><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Email"><br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Write something nice..."></textarea><br>
-            <input type="submit" value="Submit">
-        </form>-->
-
-        <h3 class="sectionsubtitle">Contacts</h3>
-        <ul class="contactlist">
-            <li class="mailicon">marco.sabau98@gmail.com</li><br>
-            <li class="mailicon">nonnodacciaio@gmail.com</li><br>
-            <li class="phoneicon">+39 327 541 1346</li>
-        </ul>
-    </section>
-    </main>
-    <footer>© 2022 Marco Sabau</footer>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--IMPORT FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@200&display=swap" rel="stylesheet">
+    <!--FINE IMPORT FONTS-->
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
-    </body>
+    <title>Marco's Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-link"><a href="#bio">BIO</a></li>
+            <li class="nav-link"><a href="#education">EDUCATION</a></li>
+            <li class="nav-link"><a href="#contacts">CONTACTS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="title">Marco Sabau</h1>
+        <section>
+            <h2 class="section-title" id="bio">BIO</h2>
+            <p>Hi, my name is Marco, I'm 24 and I've always had a passion for IT. I was 4 when I first layed my hands on
+                a computer and since then I've always tried to learn new things about hardware and software alike. This
+                led me to learn coding basics and then to attend a 480 hours course on backend webdev and now I'm
+                confident to say that I'm at a junior level</p>
+        </section>
+        <section>
+            <h2 class="section-title" id="education">EDUCATION</h2>
+            <p>I learned the basics of coding in high school with C++. There I also learned some front end (HTML, CSS)
+                and SQL. After that I developed my frontend knowledge through Freecodecamp by attending their course. It
+                was fun and now I know a good amount of HTML, CSS and JS. Then I attended a 480 hours online course
+                focused on backend things. There I learned how to build a webapp using Java (including Spring), MySQL
+                and HTML, CSS and JS (I also used quite a bit of JQuery)</p>
+        </section>
+        <section>
+            <h2 class="section-title" id="contacts">CONTACTS</h2>
+            <p>marco.sabau@gmail.com</p>
+            <p>+39 327 5411346</p>
+            </ul>
+        </section>
+    </main>
+</body>
+
 </html>
