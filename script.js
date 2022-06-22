@@ -9,12 +9,23 @@ $(document).ready(function () {
         if (newscroll > mypos && !up) {
             $('.navbar').stop().fadeOut();
             up = !up;
-            console.log(up);
         } else if (newscroll < mypos && up) {
             $('.navbar').stop().fadeIn();
             up = !up;
         }
         mypos = newscroll;
     });
+
+    $.fn.showTime = function () {
+        let date = new Date();
+        let hour = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+        let time = hour + ":" + min + ":" + sec;
+        $(".clock").text(time);
+        setTimeout($.fn.showTime, 1000);
+    }
+
+    $.fn.showTime();
 
 });

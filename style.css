@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
 :root {
   --dark: #374151;
   --darker: #1f2937;
@@ -40,14 +42,9 @@ body {
   gap: 1em;
 }
 
-.nav-list > li {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex: 1;
-}
-
 .nav-link {
   text-align: center;
+  font-family: Orbitron;
 }
 
 .nav-link a {
@@ -140,6 +137,10 @@ section a {
   }
 }
 
+.clock {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .title {
     font-size: 5em;
@@ -155,5 +156,11 @@ section a {
 
   .nav-list {
     font-size: 2em;
+  }
+
+  .clock {
+    display: block;
+    color: var(--blue);
+    font-family: Orbitron;
   }
 }
