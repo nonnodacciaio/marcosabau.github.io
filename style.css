@@ -35,6 +35,9 @@ body {
   left: 0;
   width: 100%;
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
+
+  scroll-margin-bottom: 1em;
+  gap: 1em;
 }
 
 .nav-list > li {
@@ -94,6 +97,7 @@ body {
   text-align: center;
   color: var(--blue);
 }
+
 section {
   margin: auto;
   text-align: center;
@@ -103,6 +107,25 @@ section {
 
 section p {
   color: var(--light);
+}
+
+section p a {
+  text-decoration: none;
+  color: var(--red);
+}
+
+#projects {
+  width: fit-content;
+}
+
+#projects p {
+  color: var(--red);
+  cursor: pointer;
+}
+
+#projects > p:hover {
+  background-color: var(--pink);
+  color: var(--purple);
 }
 
 @keyframes pulse-animation {

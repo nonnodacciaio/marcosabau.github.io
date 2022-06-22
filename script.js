@@ -1,8 +1,9 @@
 $(document).ready(function () {
-    var mywindow = $(window);
-    var mypos = mywindow.scrollTop();
-    var up = false;
-    var newscroll;
+
+    let mywindow = $(window);
+    let mypos = mywindow.scrollTop();
+    let up = false;
+    let newscroll;
     mywindow.scroll(function () {
         newscroll = mywindow.scrollTop();
         if (newscroll > mypos && !up) {
@@ -15,4 +16,5 @@ $(document).ready(function () {
         }
         mypos = newscroll;
     });
+
 });
