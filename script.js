@@ -26,6 +26,14 @@ $(document).ready(function () {
         setTimeout($.fn.showTime, 1000);
     }
 
+    $("#portfolio").on("click", function () {
+        $(".modal").show();
+    })
+
+    $("#close").on("click", function () {
+        $(".modal").hide();
+    })
+
     $.fn.showTime();
 
 });
