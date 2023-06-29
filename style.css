@@ -184,12 +184,6 @@ section a {
   cursor: pointer;
 }
 
-footer {
-  text-align: center;
-  color: var(--dark);
-  font-family: "Neuton", serif;
-}
-
 @media only screen and (min-width: 768px) {
   .title {
     font-size: 5em;
